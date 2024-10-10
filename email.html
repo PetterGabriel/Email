@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./email.css">
+</head>
+<body>
+    <div class="top"></div>
+        <h1>Super Enviador de Emails 2024!</h1>
+    <div class="m2">
+        <form>
+            <div class="mb-3">
+            <label for="topicField" class="form-label"">Assunto</label>
+            <input type="text" class="form-control" id="topicField" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+            <label for="messageField" class="form-label">Mensagem</label>
+            <input type="text" class="form-control" id="messageField">
+            </div>
+            
+        </form>
+        <button class="btn btn-primary" onClick="sendEmail()">Enviar</button>
+    </div>
+    
+
+</body>
+    <script src="./email.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</html>
